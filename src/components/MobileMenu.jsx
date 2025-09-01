@@ -35,7 +35,10 @@ export default function MobileMenu({ Menus, active, setMenuOpened }) {
 
   return (
     <div>
-      <button className="z-[999] relative" onClick={toggleDrawer}>
+      <button
+        className="z-[999] relative cursor-pointer"
+        onClick={toggleDrawer}
+      >
         {isOpen ? (
           <X
             className={`${
