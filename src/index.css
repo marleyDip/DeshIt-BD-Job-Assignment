@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
+
+html, body {
+  background-color: white;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+   font-family: "Inter", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
 
 @layer components {
     .max-padd-container {
-    @apply mx-auto max-w-[1440px] px-4 lg:px-12;
+    @apply mx-auto max-w-[1280px] px-4 md:px-8;
+  }
+
+  .sub-menu-active {
+    @apply absolute top-[5.3rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04];
+  }
+  
+  .sub-menu {
+    @apply absolute top-[4rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04];
   }
 }
